@@ -13,7 +13,10 @@ bob.show();
 bob.move();
 for(int i = 0; i < nightSky.length; i++)
 { 
- 
+  nightSky[i].show(); 
+fill(0,250,250);
+
+}  
 }
 public void keyPressed() 
 {   
@@ -30,8 +33,7 @@ bob.setYCenter((int)(Math.random()*300+100));
 } 
 } 
 class Floater
-{     
-protected int corners;
+{     public int corners;
    protected int[] xCorners;
  protected int[] yCorners;   
  protected int myColor;   
