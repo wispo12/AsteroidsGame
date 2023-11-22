@@ -35,8 +35,9 @@ bob.setXCenter((int)(Math.random()*300+100));
 bob.setYCenter((int)(Math.random()*300+100));   
 } 
 } 
-class Floaters
-{     protected int corners;
+class Floater
+{     
+protected int corners;
    protected int[] xCorners;
  protected int[] yCorners;   
  protected int myColor;   
