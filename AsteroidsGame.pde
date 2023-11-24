@@ -44,7 +44,7 @@ class Floater
  protected double myPointDirection; 
  public void accelerate (double dAmount)     
  {            
- double dRadians =myPointDirection*(Math.PI/180);        
+ double dRadians =myPointDirection * (Math.PI/180);        
  myXspeed += ((dAmount) * Math.cos(dRadians));      
  myYspeed += ((dAmount) * Math.sin(dRadians));         
  }     
