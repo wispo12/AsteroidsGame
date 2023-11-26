@@ -33,52 +33,10 @@ public void keyPressed() {
     bob.setYCenter((int)(Math.random()*300+100));
   }
 }
-class Spaceship extends Floater {
-  public Spaceship() {
-    corners = 4;
-    xCorners = new int[corners];
-    yCorners = new int[corners];
-    xCorners[0] = -8;
-    yCorners[0] = -8;
-    xCorners[1] = 16;
-    yCorners[1] = 0;
-    xCorners[2] = -8;
-    yCorners[2] = 8;
-    xCorners[3] = -2;
-    yCorners[3] = 0;
-    myColor = color(255, 0, 0);
-    myXspeed = 0;
-    myYspeed = 0;
-    myPointDirection = 0;
-    myCenterX = 200;
-    myCenterY = 200;
-  }
-  public void setXspeed(double x) {
-    myXspeed = x;
-  }
-  public void setYspeed(double y) {
-    myYspeed = y;
-  }
-  public void setXCenter(double x2) {
-    myCenterX = x2;
-  }
-  public void setYCenter(double y2) {
-    myCenterY = y2;
-  }
-}
 
 
-class Star {
-  private int myX, myY;
-  public Star() {
-    myX = ((int)(Math.random()*500));
-    myY = ((int)(Math.random()*500));
-  }
-  public void show() {
-    fill((int)(Math.random()*255));
-    ellipse(myX, myY, 5, 5);
-  }
-}
+
+
 
 
 
