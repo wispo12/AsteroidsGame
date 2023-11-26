@@ -12,7 +12,7 @@ public void draw() {
   bob.move();
   for (int i = 0; i < sky.length; i++) {
     sky[i].show();
-    fill(255);
+    fill(0,255,0);
   }
 }
 public void keyPressed() {
