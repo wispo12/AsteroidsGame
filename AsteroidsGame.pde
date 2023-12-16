@@ -69,7 +69,7 @@ public void keyPressed()
 
  }
  if (key == ' ') {
-    // Add a new Bullet to the ArrayList
+
     bullets.add(new Bullet(bob));
   }
 }
