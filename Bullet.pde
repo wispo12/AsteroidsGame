@@ -1,25 +1,23 @@
-class Bullet extends Floater{
-  Bullet(Spaceship theShip) {
+class Bullet extends Floater {
+ 
+  public Bullet(Spaceship theShip){
     myCenterX = theShip.getX();
     myCenterY = theShip.getY();
-    myXspeed = 0;
-    myYspeed = 0;
+    myXspeed = theShip.getXspeed();
+    myYspeed = theShip.getYspeed();
     myPointDirection = theShip.getPointDirection();
+    accelerate(3);
    
-    // Accelerate the bullet
-    accelerate(6.0);
+    
   }
- 
-  public double getX(){
-  return myCenterX;
+  public void show(){
+  ellipse((float)myCenterX, (float)myCenterY, 10, 10);
   }
-  public double getY(){
-  return myCenterY;
+  
+  public double getMyCenterX(){
+    return myCenterX;
   }
-
-  // Override the show() method for circular bullets
-  void show() {
-    fill(255); // Set color to white (you can change this)
-    ellipse((float)myCenterX, (float)myCenterY, 10, 10); // Adjust size as needed
+  public double getMyCenterY(){
+    return myCenterY;
   }
 }
