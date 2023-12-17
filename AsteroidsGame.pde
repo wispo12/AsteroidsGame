@@ -1,5 +1,5 @@
 Spaceship bob = new Spaceship();
-Star[] nightSky = new Star[50];
+Star[] nightSky = new Star[200];
 ArrayList<Bullet> bullets;
 ArrayList<Asteroid> ast = new ArrayList<Asteroid>();
 public void setup()
@@ -73,3 +73,8 @@ public void keyPressed()
     bullets.add(new Bullet(bob));
   }
 }
+
+
+
+
+
